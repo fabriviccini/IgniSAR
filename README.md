@@ -1,24 +1,28 @@
-Para poder correr el programa tienen que tener instalado:
+# Fire Prediction Project
 
--Node.js 18.x  (https://nodejs.org/es/download)
+This project leverages geospatial and AI tools to predict and analyze high-risk fire zones.
 
--npm 
+## Requirements
 
-Una vez que este instalado usando el terminal de VScode siguen estos pasos:
+Ensure you have the following installed on your system:
 
-1. Clonar el repositorio:
+- Node.js and npm
+- Python 3.x
 
-git clone https://github.com/fabriviccini/GeoLLM.git
+## Installation
 
-cd geoLLM
+### Step 1: Set Up Node.js Environment
 
-2. Instalar dependencias:
+Navigate to your project folder and run the following command to install the necessary Node.js dependencies:
 
+```bash
 npm install
 
-3. Iniciar el servidor de desarrollo:
-  
-  npm run dev
+### Step 2: Configure the .env File
+Create a .env file in the root of the project and add your API keys for GEMINI 2.0 and Google Earth Engine. The file should look like this:
 
-4. En su navegador pegan
-  http://localhost:3000
+GEMINI_API_KEY=your_gemini_key
+GOOGLE_EARTH_ENGINE_KEY=your_google_earth_engine_key
+
+Make sure to replace your_gemini_key and your_google_earth_engine_key with your actual keys.
+
